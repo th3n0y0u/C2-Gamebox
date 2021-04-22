@@ -28,7 +28,7 @@ def RPS():
   # cpu and player
   # cpu chooses a random number between 1 - 3
   # get player choice
-  # use nested condiditionals
+  # use nested conditionals
   print("1. Rock \n"
   "2. Paper\n"
   "3. Scissors\n")
