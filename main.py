@@ -8,7 +8,19 @@ import random, time
 # Fortune Teller
 
 def guessingGame():
-  print("This is the guessing game")
+  # print("This is the guessing game")
+  # cpu will chose a random number between 1-10
+  # user guesses until they are correct
+  userInput = int(input("Please choose a number between 1-10: "))
+  cpu = random.randint(1,10)
+  while(userInput != cpu):
+    if(userInput > cpu):
+      print("Too high")
+      userInput = int(input("Try again: "))
+    if(userInput < cpu):
+      print("Too low")
+      userInput = int(input("Try again: "))
+  print("You got it!") 
 
 def RPS():
   # print("This is rock paper scissors")
